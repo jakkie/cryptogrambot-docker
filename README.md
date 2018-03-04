@@ -1,7 +1,7 @@
 # cryptogrambot-docker
 CryptoGramBot Docker
 
-Current CryptoGramBot version : 0.3.238
+Current CryptoGramBot version : 0.3.302
 https://github.com/mehtadone/CryptoGramBot/releases
 
 CryptoGramBot https://github.com/mehtadone/CryptoGramBot
@@ -25,5 +25,11 @@ docker build -t cryptogrambot .
 - To build with a specific CryptoGramBot version. Just change the CryptoGramBot version to the version you want. To see which versions are available go to
 https://github.com/mehtadone/CryptoGramBot/releases
 ```
-docker build -t cryptogrambot --build-arg CRYPTOGRAMBOT_VERSION=0.3.238 .
+docker build -t cryptogrambot --build-arg CRYPTOGRAMBOT_VERSION=0.3.302 .
+```
+### Running with docker-compose
+- To install docker compose see https://docs.docker.com/compose/install/
+- To start docker-compose to run all the containers.
+```
+docker-compose up -d
 ```

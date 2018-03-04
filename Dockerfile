@@ -1,10 +1,8 @@
 FROM ubuntu:latest
 
-RUN apt-get update
-RUN apt-get install -y unzip wget curl apt-transport-https
-RUN apt-get clean
+RUN apt-get update && apt-get install -y unzip wget curl apt-transport-https && apt-get clean
 
-ARG CRYPTOGRAMBOT_VERSION=0.3.238
+ARG CRYPTOGRAMBOT_VERSION=0.3.302
 ENV CRYPTOGRAMBOT_VERSION ${CRYPTOGRAMBOT_VERSION}
 
 RUN mkdir -p /cryptogrambot

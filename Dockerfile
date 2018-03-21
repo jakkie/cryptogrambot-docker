@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y unzip wget curl apt-transport-https && apt-get clean
 
-ARG CRYPTOGRAMBOT_VERSION=0.3.302
+ARG CRYPTOGRAMBOT_VERSION=0.3.308
 ENV CRYPTOGRAMBOT_VERSION ${CRYPTOGRAMBOT_VERSION}
 
 RUN mkdir -p /cryptogrambot
